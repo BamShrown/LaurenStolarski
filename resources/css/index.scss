@@ -1,0 +1,90 @@
+
+    // Variables
+
+    // Colours
+
+    $d-green: #1b4526;
+    $m-green: #3f7652;
+    $l-green: #9cb39e;
+    $d-red: #c64521;
+    $m-red: #eb5428;
+    $l-red: #f4bc99;
+
+    // Font Sizes
+    $h1: clamp(1rem, 10vw, 1.8rem);
+    $h2: clamp(1rem, 7vw, 1.6rem);
+    $h3: clamp(1rem, 5vw, 1.5rem);
+    $h4: clamp(0.8rem, 2.5vw, 1.3rem); 
+    $h5: clamp(0.8rem, 1.5vw, 1.1rem); 
+    $p: clamp(0.4rem, 1.5vw, 0.7rem); 
+    $i: 25px;
+
+    
+    // All
+    
+    * {
+        color: white;
+        font-size: 40px;
+        font-family: 'Quicksand', sans-serif;
+        
+        h1 {
+            font-size: $h1;
+            color: white;
+        }
+        h2 {
+            font-size: $h2;
+            color: white;
+        }
+
+        h3 {
+            font-size: $h3;
+            color: white;
+        }
+        h4 {
+            font-size: $h4;
+            color: white;
+        }
+        h5 {
+            font-size: $h5;
+            color: white;
+        }
+
+        p {
+            font-size: $p;
+            color: white;
+        }
+
+        body {
+            background-color: black;
+        }
+    }
+
+//
+//    HEADER
+////////////////////////
+
+.headerbackground {
+    height: 530px;
+    background-image: url(../pictures/HeaderImg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+//
+//    BANNER
+////////////////////////
+
+
+
+// 
+//   PARALLAX DIV
+////////////////////////
+
+
+#parallaxbackgrounddiv {
+    background-image: url(../pictures/KitchenBackground.jpg);
+    background-color: white;
+    height: 200px;
+}
+
