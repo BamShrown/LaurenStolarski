@@ -13,7 +13,7 @@
     // Font Sizes
     $h1: clamp(1rem, 10vw, 1.8rem);
     $h2: clamp(1rem, 7vw, 1.6rem);
-    $h3: clamp(1rem, 5vw, 1.5rem);
+    $h3: clamp(1rem, 3vw, 1.5rem);
     $h4: clamp(0.8rem, 2.5vw, 1.3rem); 
     $h5: clamp(0.8rem, 1.5vw, 1.1rem); 
     $p: clamp(0.4rem, 1.5vw, 0.7rem); 
@@ -53,6 +53,17 @@
             font-size: $p;
             color: white;
         }
+        li {
+            font-size: $p;
+            color: white;
+        }
+        i {
+            font-size: $h5;
+            color: white; 
+        }
+        figcaption {
+            font-size: $h4;
+        }
 
         body {
             background-color: black;
@@ -63,11 +74,37 @@
 //    HEADER
 ////////////////////////
 
-.headerbackground {
+.headerbackgroundmain {
     height: 530px;
     background-image: url(../pictures/HeaderImg.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.headerbackground {
+    height: 10px;
+    background-image: url(../pictures/HeaderImg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 90px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: $p;
+    border-radius: 0px;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+
 }
 
 
@@ -77,14 +114,149 @@
 
 
 
+//
+//   MAIN PAGE SECTION
+/////////////////////// 
+
+figure {
+    
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    z-index: -1;
+    width: 100%;
+
+    &:hover {
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+        
+        
+        .figcap {
+            display: block;
+            
+        }
+    }
+}
+  
+  figcaption {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    height: auto;
+    width: 100%;
+    float: right;
+    text-align: center;
+    color: white;
+    z-index: 5;
+    position: relative;
+  }
+
+
+.cardheader {
+    transform: scale(1);
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+    &:hover {
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+        .cardtitle {
+            font-size: $h3;
+            transition: 1s;
+        }
+    }
+}
+
+.cardtitle {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 0px 4px #000000;
+}
 // 
-//   PARALLAX DIV
+//   INFORMATION PAGE
+////////////////////////
+
+.software {
+    background-color: $m-green;
+}
+
+
+// 
+//   FREEDOM PAGE
+////////////////////////
+
+.topdivsec {
+    height: 600px;
+}
+
+// .splitdiv {
+//     height: 40%;
+// }
+
+// .secondsplit {
+//     margin-top: 10%;
+// }
+
+// 
+//   AY UP PETAL DIV
 ////////////////////////
 
 
-#parallaxbackgrounddiv {
-    background-image: url(../pictures/KitchenBackground.jpg);
-    background-color: white;
-    height: 200px;
+#imgghost {
+    position: absolute;
+    left: 30%;
+    top: 0%;
 }
 
+
+ 
+//   ALL MEDIA
+////////////////////////////////////////////////
+//
+// 
+//   EX LARGE SCREENS
+////////////////////////
+
+@media (min-width: 1200px) {
+
+    
+  }
+
+
+// 
+//   LARGE SCREENS
+////////////////////////
+
+@media (min-width: 992px) {
+
+}
+
+
+// 
+//   MEDIUM SCREENS
+////////////////////////
+
+@media (min-width: 768px) {
+
+    #imgghost {
+        position: absolute;
+        left: 40%;
+        top: 20%;
+    }
+}
+
+
+// 
+//   SMALL SCREENS
+////////////////////////
+
+@media (min-width: 576px) {
+
+   
+    
+}

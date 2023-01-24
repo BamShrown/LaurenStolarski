@@ -12,7 +12,7 @@
   color: white;
 }
 * h3 {
-  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   color: white;
 }
 * h4 {
@@ -27,19 +27,119 @@
   font-size: clamp(0.4rem, 1.5vw, 0.7rem);
   color: white;
 }
+* li {
+  font-size: clamp(0.4rem, 1.5vw, 0.7rem);
+  color: white;
+}
+* i {
+  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+  color: white;
+}
+* figcaption {
+  font-size: clamp(0.8rem, 2.5vw, 1.3rem);
+}
 * body {
   background-color: black;
 }
 
-.headerbackground {
+.headerbackgroundmain {
   height: 530px;
   background-image: url(../pictures/HeaderImg.jpg);
   background-size: cover;
   background-position: center;
 }
 
-#parallaxbackgrounddiv {
-  background-image: url(../pictures/KitchenBackground.jpg);
+.headerbackground {
+  height: 10px;
+  background-image: url(../pictures/HeaderImg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 90px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: clamp(0.4rem, 1.5vw, 0.7rem);
+  border-radius: 0px;
+}
+.btn-primary:hover {
   background-color: white;
-  height: 200px;
+  color: black;
+  transition: 0.5s;
+}
+
+figure { /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  z-index: -1;
+  width: 100%;
+}
+figure:hover { /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+figure:hover .figcap {
+  display: block;
+}
+
+figcaption {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  height: auto;
+  width: 100%;
+  float: right;
+  text-align: center;
+  color: white;
+  z-index: 5;
+  position: relative;
+}
+
+.cardheader {
+  transform: scale(1);
+  max-width: 100%;
+  width: 100%;
+  display: block; /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.cardheader:hover { /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+.cardheader:hover .cardtitle {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  transition: 1s;
+}
+
+.cardtitle {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 3px 0px 4px #000000;
+}
+
+.software {
+  background-color: #3f7652;
+}
+
+.topdivsec {
+  height: 600px;
+}
+
+#imgghost {
+  position: absolute;
+  left: 30%;
+  top: 0%;
+}
+
+@media (min-width: 768px) {
+  #imgghost {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+  }
 }/*# sourceMappingURL=index.css.map */
