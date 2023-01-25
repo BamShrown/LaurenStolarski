@@ -101,11 +101,7 @@ figcaption {
   transform: scale(1);
   max-width: 100%;
   width: 100%;
-  display: block; /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-.cardheader:hover { /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
+  display: block;
 }
 .cardheader:hover .cardtitle {
   transition: 0.3s;
@@ -143,5 +139,18 @@ figcaption {
   }
   .headerbackgroundmain {
     background-image: url(../pictures/HeaderImg.jpg);
+  }
+  .cardheader {
+    transform: scale(1);
+    max-width: 100%;
+    width: 100%;
+    display: block; /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  .cardheader:hover { /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
+  .cardheader:hover .cardtitle {
+    transition: 0.3s;
   }
 }/*# sourceMappingURL=index.css.map */
