@@ -76,7 +76,7 @@
 
 .headerbackgroundmain {
     height: 530px;
-    background-image: url(../pictures/HeaderImg.jpg);
+    background-image: url(../pictures/BackgroundDiv.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -162,8 +162,7 @@ figure {
         -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
         filter: grayscale(0%);
         .cardtitle {
-            font-size: $h3;
-            transition: 1s;
+            transition: 0.3s;
         }
     }
 }
@@ -247,6 +246,10 @@ figure {
         position: absolute;
         left: 40%;
         top: 20%;
+    }
+
+    .headerbackgroundmain {
+        background-image: url(../pictures/HeaderImg.jpg);
     }
 }
 

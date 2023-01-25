@@ -44,7 +44,7 @@
 
 .headerbackgroundmain {
   height: 530px;
-  background-image: url(../pictures/HeaderImg.jpg);
+  background-image: url(../pictures/BackgroundDiv.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -108,8 +108,7 @@ figcaption {
   filter: grayscale(0%);
 }
 .cardheader:hover .cardtitle {
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .cardtitle {
@@ -141,5 +140,8 @@ figcaption {
     position: absolute;
     left: 40%;
     top: 20%;
+  }
+  .headerbackgroundmain {
+    background-image: url(../pictures/HeaderImg.jpg);
   }
 }/*# sourceMappingURL=index.css.map */
